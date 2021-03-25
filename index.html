@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+</head>
+<body>
+
+<header>
+	<nav>
+		<div class="nav-container">
+			<div class="logo-container">
+				<img src="images/logo.png">
+			</div>
+			<ul class="side-nav">
+				<li><h6>Sign up</h6></li>
+			</ul>
+      <audio id="audio" preload loop>
+            <source src="https://s3.amazonaws.com/winter-tidings/assets/audio/forest-lullaby-soundtrack.mp3" type="audio/mpeg">
+        </audio>
+  <audio id="soundeffects" preload src="https://s3.amazonaws.com/winter-tidings/assets/audio/sound-effects.mp3"></audio>
+		</div>
+	</nav>
+	</header>
+
+
+<section>
+<div class="container">
+  <div class="background">
+    <h1 class=" animated fadeIn delay-1s">Wilderness.</h1>
+    <div class="layer layer-1"></div>
+    <div class="layer layer-2"></div>
+    <div class="layer layer-3"></div>
+    <div class="layer layer-4"></div>
+    <div class="side-nav-left-bottom  animated fadeInDown delay-1s">
+				<h6>Travel</h6><h6>FAQ</h6><h6>Journey</h6>
+	</div>
+    <div class="side-nav-right-bottom animated fadeInDown delay-1s">
+				<h6>Instagram</h6><h6>Dribble</h6><h6>Behance</h6>
+	</div>
+	
+  </div>
+
+  <div class="content">
+  	<div class="image-container">
+  		<div class="back-img"><img data-aos="fade-up" data-aos-duration="4000" src="images/w1.jpg"><h2 class="number">04</h2></div>
+  		<div class="back-img-1 "><img  data-aos="fade-up" data-aos-duration="4000" src="images/w2.jpg"><h2 class="number">01</h2></div>
+  		<div class="back-img-2 "><img data-aos="fade-up" data-aos-duration="4000" src="images/w3.jpg"><h2 class="number">02</h2></div>
+  		<div class="back-img-3 "><img data-aos="fade-up" data-aos-duration="4000" src="images/w4.jpg"><h2 class="number">03</h2></div>
+  	</div>
+    <div class="text">
+      <p>Nature, in the broadest sense, is the natural, physical, or material world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general. The study of nature is a large, if not the only, part of science. Although humans are part of nature, human activity is often understood as a separate category from other natural phenomena.</p><br>
+
+      <p>The word nature is derived from the Latin word natura, or "essential qualities, innate disposition", and in ancient times, literally meant "birth". Natura is a Latin translation of the Greek word physis (φύσις), which originally related to the intrinsic characteristics that plants, animals, and other features of the world develop of their own accord. The concept of nature as a whole, the physical universe, is one of several expansions of the original notion; it began with certain core applications of the word φύσις by pre-Socratic philosophers, and has steadily gained currency ever since.</p>
+    </div>
+
+    <div class="rock"></div>
+  </div>
+
+</div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript">
+		$(window).bind("scroll", function(e) {
+  parallaxScroll();
+});
+
+function parallaxScroll() {
+  var scrolled = $(window).scrollTop();
+  $(".layer-1").css("top", 0 - scrolled * 0.25 + "px");
+  $(".layer-2").css("top", 0 - scrolled * 0.5 + "px");
+  $(".layer-3").css("top", 0 - scrolled * 0.75 + "px");
+  $(".rock-1").css("top", 400 - scrolled * 0.8 + "px");
+  $(".rock-2").css("top", 200 - scrolled * 0.6 + "px");
+  $(".rock-3").css("top", 500 - scrolled * 0.4 + "px");
+  $(".rock-4").css("top", 600 - scrolled * 0.5 + "px");
+  $(".rock-5").css("top", 600 - scrolled * 0.7 + "px");
+  $(".rock-6").css("top", 400 - scrolled * 0.7 + "px");
+  $(".rock-7").css("top", 600 - scrolled * 0.5 + "px");
+  $(".rock-8").css("top", 200 - scrolled * 0.2 + "px");
+  $(".rock-9").css("top", 200 - scrolled * 0.4 + "px");
+}
+
+</script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
